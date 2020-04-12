@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/ColorCeleste"
+    android:layout_height="match_parent"
+    tools:context=".UI.SingOup">
+
+    <EditText
+        android:id="@+id/Rcorreoid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/colorBlanco"
+        android:ems="10"
+        android:textColor="@color/colorBlanco"
+        android:hint="Correo"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/colorBlanco"
+        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <EditText
+        android:id="@+id/Rcontraseñaid"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:hint="***********"
+        android:maxLength="10"
+        android:backgroundTint="@color/colorBlanco"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorBlanco"
+        app:layout_constraintEnd_toEndOf="@+id/Rcorreoid"
+        app:layout_constraintStart_toStartOf="@+id/Rcorreoid"
+        app:layout_constraintTop_toBottomOf="@+id/Rcorreoid" />
+
+    <Button
+        android:id="@+id/Riniciarsessionid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Iniciar Sesion"
+        android:backgroundTint="@color/colorBlanco"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/Rcontraseñaid"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/Rcontraseñaid"
+        app:layout_constraintTop_toBottomOf="@+id/Rcontraseñaid" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:ems="10"
+        android:textColor="@color/colorBlanco"
+        android:textColorHint="@color/colorBlanco"
+        android:backgroundTint="@color/colorBlanco"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

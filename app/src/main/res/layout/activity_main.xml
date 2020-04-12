@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorCeleste"
+    tools:context=".UI.MainActivity" >
+
+    <EditText
+        android:id="@+id/correoid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:ems="10"
+        android:textColorHint="@color/colorBlanco"
+        android:inputType="textEmailAddress"
+        android:hint="Correo"
+        android:backgroundTint="@color/colorBlanco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/contraseñaid"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:hint="***********"
+        android:maxLength="10"
+        android:backgroundTint="@color/colorBlanco"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorBlanco"
+        app:layout_constraintEnd_toEndOf="@+id/Rcorreoid"
+        app:layout_constraintStart_toStartOf="@+id/correoid"
+        app:layout_constraintTop_toBottomOf="@+id/correoid" />
+
+    <Button
+        android:id="@+id/ingresar"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/colorBlanco"
+        android:text="Iniciar Sesion"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/contraseñaid"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@+id/contraseñaid"
+        app:layout_constraintTop_toBottomOf="@+id/contraseñaid" />
+
+    <TextView
+        android:id="@+id/registrarseid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="4dp"
+        android:text="Registrarse?"
+        android:textColor="@color/colorNegro"
+        app:layout_constraintEnd_toEndOf="@+id/ingresar"
+        app:layout_constraintTop_toBottomOf="@+id/ingresar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
